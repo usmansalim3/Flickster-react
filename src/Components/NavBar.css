@@ -1,0 +1,70 @@
+.textBoxContainer{
+    display: flex;
+    background-color:white ;
+    padding: 5px;
+    align-items: center;
+    border-radius: 10px 10px ;
+    box-shadow: 1px 2px 4px;
+    transition: all 1s;
+}
+.textBoxContainer:hover{
+    box-shadow: 1px 2px 10px;
+    transition: box-shadow 0.3s ease-in-out;
+}
+.textBoxContainer::after{
+    box-shadow: 0px 0px 0px;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+}
+.svgLogo{
+    box-shadow: 1px 2px 5px;
+    border-radius: 50px;
+    transition: all 0.3s;
+    cursor: pointer;
+}
+.svgLogo:hover{
+    transform: scale(1.1, 1.1);
+    box-shadow: 1px 2px 10px;
+    transition: all 0.3s ease-in-out;
+}
+.inputBox{
+    /* style={{border:"none",outline:'none',fontSize:20,fontFamily:"Oswald",width:"35vw"}} */
+    border: none;
+    outline: none;
+    font-size: 20px;
+    font-family: Oswald;
+    width: 35vw;
+    
+}
+.buttonsContainer{
+    display:flex;
+    gap:10px;
+}
+.menuButton{
+    display: none;
+}
+.sideBar{
+    width: 200px;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    padding-top:20px;
+    margin-left: 0px;
+    flex-grow: 1;
+}
+@media (max-width: 750px){
+    .buttonsContainer{
+        display: none;
+    }
+    .menuButton{
+        display:flex;
+        right:0px;
+        position: relative;
+    }
+    .svgLogo{
+        display: none;
+    }
+    .inputBox{
+        font-size: 16px;
+    }
+}

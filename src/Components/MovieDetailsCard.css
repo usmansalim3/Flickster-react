@@ -1,0 +1,16 @@
+/* display:'flex',flexDirection:'column',backgroundColor:'wheat',width:'20%',borderRadius:5,padding:'1%' */
+.categoryBox{
+    display: flex;
+    flex-direction: column;
+    background-color: wheat;
+    width: 20%;
+    padding: 1%;
+    border-radius: 5px;
+}
+
+@media(max-width:1250px){
+    .categoryBox{
+        width: 250px;
+        padding: 10px;
+    }
+}

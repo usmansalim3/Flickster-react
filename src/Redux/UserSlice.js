@@ -44,8 +44,8 @@ export const registerThunk=createAsyncThunk("/registerThunk",async ({email,passw
         // });
         // return response.data.user
     }catch(error){
-        console.log(error.response.data.user)
-        return rejectWithValue(error.response.data.user);
+        console.log(error)
+        return rejectWithValue(error);
     }
 })
 
@@ -55,8 +55,8 @@ export const loginThunk=createAsyncThunk("/loginThunk",async ({email,password},{
         const user= await auth.signInWithEmailAndPassword(email,password);
         return user;
     }catch(error){
-        console.log(error.response.data.user)
-        return rejectWithValue(error.response.data.user);
+        console.log(error)
+        return rejectWithValue(error);
     }
 })
 

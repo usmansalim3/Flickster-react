@@ -56,8 +56,12 @@ export default function Login() {
       },[dispatch,state])
 
       async function signInWithGoogle(){
-        const result = await auth.signInWithPopup(googleAuthProvider)
-        dispatch(setUser(result));
+        try{
+            const result = await auth.signInWithPopup(googleAuthProvider)
+            dispatch(setUser(result));
+        }catch(error){
+            console.log(error)
+        }
       }
 
   return (

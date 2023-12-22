@@ -85,10 +85,19 @@ function CategoryModal({setSaved,vis,setVis,id,data}) {
       }
       async function deleteCategory(val){
         let filteredCat=categories.filter((cat)=>cat!=val)
+        let filteredPosts=[];
         setCategories(filteredCat);
         await firebase.firestore().collection("watchlist").doc(userID).update({
             categories:filteredCat
         })
+        await firebase.firestore().collection("watchlist").doc(userID).collection("posts").onSnapshot((data)=>{
+            data.docs.forEach(post=>{
+                if(post.data().category!=val){
+                    post.ref.delete();
+                };
+            })
+        })
+        await firebase.firestore().collection("watchlist").doc(userID).collection("posts")
     
       }
       function ChildModal(){

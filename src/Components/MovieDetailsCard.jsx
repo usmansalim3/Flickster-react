@@ -36,6 +36,7 @@ const MovieDetailsCard = ({img,title,ratings,actors,director,genre,plot,rated,ru
 async function get(){
     await firebase.firestore().collection("watchlist").doc(userID).collection("posts").where("imdbID",'==',id).get().then((snap)=>{
         snap.forEach(s=>{
+            console.log(s.data())
             if(s.data()){
                 setSaved(true);
             }

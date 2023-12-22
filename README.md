@@ -1,70 +1,32 @@
-# Getting Started with Create React App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# Flickster 
 
-## Available Scripts
+A Movie Search Engine where you can create your own playlists based on genre.
 
-In the project directory, you can run:
 
-### `npm start`
+## Features
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- User registration and login through Firebase including Google Sign-in
+- Search any movie based on title , genre , director etc
+- Get all the useful info about any movie like runtime , awards , actors etc.
+- Create and manage playlists based on user's input
+- Lottie animations for loading
+- Complete Global state management and error handling
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Tech Stack
 
-### `npm test`
+**Client:** React, Redux Toolkit
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+**Server:** Firebase
 
-### `npm run build`
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Demo
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+https://github-production-user-asset-6210df.s3.amazonaws.com/112751010/292510813-20f19dc0-a62c-4b5e-a9ff-2945ad906c9e.mp4?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAIWNJYAX4CSVEH53A%2F20231222%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20231222T152515Z&X-Amz-Expires=300&X-Amz-Signature=73cf9389ec62b0ab3b54b94b401d3a21cc53917a3b33b23837ad90a008065503&X-Amz-SignedHeaders=host&actor_id=112751010&key_id=0&repo_id=593575866
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+https://github-production-user-asset-6210df.s3.amazonaws.com/112751010/292510798-5cf5f500-890b-4855-915b-2ea341a7d815.mp4?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAIWNJYAX4CSVEH53A%2F20231222%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20231222T152459Z&X-Amz-Expires=300&X-Amz-Signature=ad24e9835d8a77d5f38e4d3ad5a78917831e03c0c3de6e6ea4fc785a63c8821d&X-Amz-SignedHeaders=host&actor_id=112751010&key_id=0&repo_id=593575866
 
-### `npm run eject`
+https://github-production-user-asset-6210df.s3.amazonaws.com/112751010/292510759-57051d34-dc8a-4ed6-8d88-d9a48823170d.mp4?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAIWNJYAX4CSVEH53A%2F20231222%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20231222T152449Z&X-Amz-Expires=300&X-Amz-Signature=ed4d16aaa5920438ad332e7e68871e9043ac5633fd63b22610544c56c157cb2a&X-Amz-SignedHeaders=host&actor_id=112751010&key_id=0&repo_id=593575866
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+https://github-production-user-asset-6210df.s3.amazonaws.com/112751010/292510725-27ef3be7-063a-44d6-a221-3c956c403832.mp4?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAIWNJYAX4CSVEH53A%2F20231222%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20231222T152520Z&X-Amz-Expires=300&X-Amz-Signature=bd8cc0cff4280d32609cbb4f7ff792bb97e585f86c51d9f74f1d54921a6af46b&X-Amz-SignedHeaders=host&actor_id=112751010&key_id=0&repo_id=593575866
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
